@@ -1,0 +1,122 @@
+body{
+    background: linear-gradient(180deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-attachment:fixed;
+    width:100%;
+    height:100%;
+    max-width: 800px;
+    margin: 0;
+}
+h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 25px;
+    color:black;
+    text-align: left;
+    padding-left: 5%;
+}
+p{
+    font-size: 12px;
+    width: 85%;
+    color:hsl(240, 6%, 50%);
+    padding-left: 5%;
+}
+button.acordeon.active .imagen {
+    
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+     -webkit-transform: rotate(-180deg);
+     transform: rotate(-180deg);
+
+}
+.active{
+    font-weight: bolder;
+}
+
+.imagen{
+    float: right;
+    right: 5%;
+}
+.principal{
+    background: hsl(240, 5%, 91%);
+    width: 800px;       
+    height: 470px;
+    position: absolute;
+    top:15%;
+    bottom: auto;
+    left: 22%;  
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px #5d3aa2;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-auto-columns: 380px;
+    overflow:hidden
+    
+                     
+}
+.acordeon{
+    background-color:hsl(240, 5%, 91%);
+    color:hsl(237, 12%, 33%);
+    cursor: pointer;
+    width: 100%;
+    margin: 0px;
+    padding: 5%;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+}
+.acordeon:hover{
+    color: #f1854d;
+    
+}
+.panel {
+    text-align: left;
+    width: 95%;
+    padding: none;
+    background-color: hsl(240, 5%, 91%);
+    display: none;
+    overflow: hidden;
+}
+
+
+.ladoDerecho{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top:20%;
+    margin-left: 10%;
+    grid-row: 1;
+    grid-column: 2;
+    padding-left: 5% ;
+    
+   
+}
+
+.ladoIzquierdo {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    right: 88px; 
+    top:10%;
+     
+}
+.cubo{
+    position: absolute;
+    top:275px;
+    left: 200px;
+}
+
+
+/*
+.acordeon::after{
+    content: "a";
+    position: absolute;
+    color: white;
+    background-image: url("images/icon-arrow-down.svg");
+    transform: rotate(-90deg)
+    right: 20px;
+    widows: 12px;
+}
+*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
